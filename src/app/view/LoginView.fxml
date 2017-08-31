@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="606.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller.LoginController">
+   <children>
+      <AnchorPane fx:id="ap_cat" layoutX="1.0" prefHeight="184.0" prefWidth="605.0" visible="false">
+         <children>
+            <ComboBox fx:id="combo" layoutX="528.0" layoutY="51.0" prefHeight="30.0" prefWidth="56.0" />
+            <Label alignment="CENTER" layoutX="5.0" layoutY="-1.0" prefHeight="17.0" prefWidth="590.0" text="WYBIERZ KATEGORIĘ" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="cb_db" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" text="Baza Danych">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="cb_python" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Python">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="cb_front" layoutX="14.0" layoutY="73.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Front-end">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="cb_java" layoutX="14.0" layoutY="96.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Java">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="cb_spring" layoutX="14.0" layoutY="119.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="74.0" text="Spring">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></CheckBox>
+            <Button fx:id="btn_start" layoutX="465.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#startAction" prefHeight="74.0" prefWidth="126.0" style="-fx-background-color: HoneyDew;" text="Przejdź do quizu">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Button>
+            <Label layoutX="465.0" layoutY="58.0" text="Ilość pytań:">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ap_log" layoutX="-2.0" prefHeight="142.0" prefWidth="509.0">
+         <children>
+            <VBox layoutX="212.0" layoutY="38.0" prefHeight="93.0" prefWidth="177.0">
+               <children>
+                  <Label text="Podaj login:">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="tf_login">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></TextField>
+                  <Label text="Podaj hasło:">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></Label>
+                  <PasswordField fx:id="pf_pass">
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font></PasswordField>
+               </children>
+            </VBox>
+            <Button fx:id="btn_log" layoutX="333.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#loginAction" style="-fx-background-color: HoneyDew;" text="Zaloguj">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="5.0" layoutY="8.0" prefHeight="30.0" prefWidth="590.0" text="ZALOGUJ SIĘ" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
